@@ -66,7 +66,7 @@ public class CountOnesTest {
 
             for(int i = 0; i < rhcIter; i++){
                 rhc.train();
-                //System.out.println(i + ", " + ef.value(rhc.getOptimal()));
+                pwtr.println(i + ", " + ef.value(rhc.getOptimal()));
             }
         } catch (Exception e) {
             e.printStackTrace();
@@ -81,7 +81,7 @@ public class CountOnesTest {
 
             for(int i = 0; i < saIter; i++){
                 sa.train();
-                //System.out.println(i + ", " + ef.value(sa.getOptimal()));
+                pwtr.println(i + ", " + ef.value(sa.getOptimal()));
             }
         } catch (Exception e) {
             e.printStackTrace();
@@ -96,7 +96,7 @@ public class CountOnesTest {
 
             for(int i = 0; i < gaIter; i++){
                 ga.train();
-                //System.out.println(i + ", " + ef.value(ga.getOptimal()));
+                pwtr.println(i + ", " + ef.value(ga.getOptimal()));
             }
         } catch (Exception e) {
             e.printStackTrace();
@@ -111,7 +111,7 @@ public class CountOnesTest {
 
             for(int i = 0; i < mimicIter; i++){
                 mimic.train();
-                System.out.println(i + ", " + ef.value(mimic.getOptimal()));
+                pwtr.println(i + ", " + ef.value(mimic.getOptimal()));
             }
         } catch (Exception e) {
             e.printStackTrace();
